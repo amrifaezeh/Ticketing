@@ -1,0 +1,20 @@
+<h1 class="display-3">Book a ticket!</h1>
+
+<div class="d-flex justify-content-center">
+    <img src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif" alt="" class="Responsive image "
+    *ngIf="loading">
+</div>
+<div class="row">
+  <div *ngFor="let item of items" class="col-12 col-lg-4">
+    <div class="card" >
+      <img [src]="'https://via.placeholder.com/300x200'" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.data.name}}</h5>
+        <p class="card-text">{{item.data.capacity}} more seat is available</p>
+        <button href="#" class="btn btn-primary" (click)="onBooking(item.id)"
+          [disabled]="item.data.capacity<=0">Book</button>
+      </div>
+    </div>
+  </div>
+
+</div>
