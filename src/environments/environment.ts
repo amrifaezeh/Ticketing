@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: '',
+    authDomain: 'ticketing-system-d9c5c.firebaseapp.com',
+    databaseURL: 'https://ticketing-system-d9c5c.firebaseio.com',
+    projectId: 'ticketing-system-d9c5c',
+    storageBucket: 'ticketing-system-d9c5c.appspot.com',
+    messagingSenderId: '649469669433',
+    appId: '1:649469669433:web:bcd57be4cdd1fd6e1f1de8'
+  }
 };
 
 /*
